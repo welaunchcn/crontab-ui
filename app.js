@@ -49,7 +49,7 @@ app.use(express.static(__dirname + '/config'));
 app.set('views', __dirname + '/views');
 
 // set host to 127.0.0.1 or the value set by environment var HOST
-app.set('host', (process.env.HOST || '127.0.0.1'));
+app.set('host', (process.env.HOST || '0.0.0.0'));
 
 // set port to 8000 or the value set by environment var PORT
 app.set('port', (process.env.PORT || 8000));
